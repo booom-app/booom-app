@@ -4,24 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
     <title>Booom!</title>
 </head>
 <body>
-    <div class="main-sign-block">
-        <img src="/img/booom-logo.svg" width="160px" alt="">
+    <div class="main-wrapper">
+        <div class="main-sign-block">
+            <img src="/img/booom-logo.svg" width="140px" alt="">
+    
+            <br>
+            <form class="main-form" action="/signin">
+                <input type="text" placeholder="Номер карты, телефона или email"><br>
+                <input type="password" placeholder="Пароль"><br>
+                <button>
+                    <a href="/demo/">Войти</a>
+                </button>
+            </form>
 
-        <br>
-        <form action="/signin">
-            <input type="text" placeholder="Номер карты, телефона или email">
-            <input type="password" placeholder="Пароль">
-            <button>
-                Войти
-            </button>
-        </form>
-        <br>
-        <p>
-            Впервые тут? <a href="#">Зарегистрироваться</a>
-        </p>
+            <p>
+                <a href="#">Забыли пароль?</a>
+            </p>
+            <hr width="80%">
+            <p>
+                Впервые тут? <a href="#">Зарегистрироваться</a>
+            </p>
+        </div>
+        <div class="main-download">
+            <p>Скачать мобильное приложение:</p>
+            <img src="/img/appstore-button.png" width="120px" alt="">
+            <img src="/img/gplay-button.png" width="120px" alt="">
+        </div>
     </div>
 </body>
 </html>
