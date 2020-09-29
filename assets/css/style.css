@@ -86,9 +86,12 @@ body {
     z-index: 999;
 }
 
-.logo,
+.logo {
+    padding: 15px;
+}
+
 .my-qr {
-    padding: 10px;
+    padding: 10px 15px;
     text-align: center;
 }
 
@@ -167,6 +170,10 @@ body {
 
 /* PROFILE */
 
+.profile-header {
+    height: 69px;
+}
+
 .profile {
     width: 100%;
     margin: 60px 0 80px;
@@ -196,6 +203,58 @@ body {
 .social-text {
     position: relative;
     top: -13px
+}
+
+/* HISTORY */
+
+.history-title {
+    padding-left: 20px;
+}
+
+.history-item {
+    padding-bottom: 14px;
+}
+
+.history-item:hover {
+    background: #f5f5f5;
+}
+
+.history-name a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+
+.history-data {
+    font-size: 0.7em;
+    color: #999;
+}
+
+.history-figure-history {
+    padding: 36px 30px 5px 5px;
+}
+
+.transaction-data {
+    width: 100%;
+    margin: 40px 0 80px;
+    text-align: center;
+}
+
+.transaction-sum {
+    font-size: 40px;
+    line-height: 20px;
+}
+
+.transaction-description {
+    font-size: 18px;
+}
+
+.transaction-status {
+    padding-top: 30px;
+}
+
+.green {
+    color: green;
 }
 
 /* OPEN QR */
