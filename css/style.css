@@ -9,6 +9,7 @@ body {
     background: rgb(240, 240, 240);
     color: #000;
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
 .main-wrapper {
@@ -58,4 +59,236 @@ body {
     margin: 15px auto;
     padding: 5px 8px 10px;
     text-align: center;
+}
+
+.app-window {
+    background: #fff;
+    width: 350px;
+    height: 650px;
+    border: #ccc 1px solid;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.app-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 52px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background: #fff;
+    z-index: 999;
+}
+
+.logo,
+.my-qr {
+    padding: 10px;
+}
+
+.app-screen {
+    width: 360px;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.home-balance {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+.available {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.home-buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.home-button {
+    background: #7833FF;
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 130px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 15px;
+    margin: 6px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(68,37,165,.1);
+    transition: .3s;
+}
+
+.home-button:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46,229,157,.4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+.home-history {
+    width: 100%;
+    margin: 40px 0 80px;
+}
+
+.home-history-item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+}
+
+.history-name {
+    padding: 15px 5px 5px 20px;
+}
+
+.history-figure {
+    padding: 15px 30px 5px 5px;
+}
+
+/* OPEN QR */
+
+.open-qr {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    background: #7833FF;
+    color: #fff;
+}
+
+.open-qr-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+.open-qr-close a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.open-qr-logo {
+    padding: 20px;;
+}
+
+.open-qr-id {
+    font-size: 18px;
+}
+
+.card-number {
+    font-size: 24px;
+}
+
+.open-qr-qr {
+    margin-bottom: 60px;
+}
+
+/* SEND */
+
+h1 {
+    font-size: 2.1em;
+    font-weight: 400;
+}
+
+.send-form {
+    width: 80%;
+    margin: 50px auto 40px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.send-form p {
+    font-size: 16px;
+}
+
+.recipient {
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+}
+
+.recipient-buttons {
+    width: 100%;
+    margin: 5px 0 20px;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.recipient-button {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    line-height: 15px;
+    border-radius: 15px;
+    margin: 6px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+
+.recipient-button:hover {
+    background: rgb(235, 235, 235);
+    box-shadow: 0 3px 3px rgba(0, 0, 0,.5);
+}
+
+.available {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+/* FOOTER */
+
+.app-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    background: #fff;
+    border: #ccc 1px solid;
+    z-index: 999;
+}
+
+.footer-item {
+    padding: 10px 5px 5px;
+}
+
+.footer-item img {
+    height: 30px;
 }
