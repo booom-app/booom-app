@@ -33,6 +33,12 @@ body {
     overflow: hidden;
 }
 
+.app-screen {
+    width: 360px;
+    height: 650px;
+    overflow-y: scroll;
+}
+
 .app-header {
     position: absolute;
     top: 0;
@@ -41,8 +47,13 @@ body {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    background: #fff;
+    background: rgb(255, 255, 255, 0.9);
     z-index: 999;
+}
+
+.page {
+    margin: 60px 0;
+    width: 100%;
 }
 
 a {
@@ -68,12 +79,6 @@ h1 {
 .my-qr {
     padding: 10px 15px;
     text-align: center;
-}
-
-.app-screen {
-    width: 360px;
-    height: 600px;
-    overflow-y: scroll;
 }
 
 .home-balance {
@@ -341,6 +346,168 @@ h1 {
     font-weight: 800;
 }
 
+/* CHAT */
+
+.chat {
+    margin-top: 25px
+}
+
+.chat-title {
+    text-align: center;
+    padding: 3px 0;
+    background: rgb(255, 255, 255, 0.8);
+    position: absolute;
+    top: 52px;
+    width: 100%;
+    z-index: 99999;
+}
+
+.chat-title h1 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.chat-window {
+    width: 100%;
+    min-height: 100%;
+    padding-top: 75px;
+}
+
+.chat-date {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-top: 8px;
+}
+
+.chat-bubble {
+    font-size: 18px;
+    padding: 20px;
+    position: relative;
+    border-radius: 20px;
+    max-width: 70%;
+    margin-top: 10px;
+}
+
+.bubble-him {
+    background: #eee;
+    text-align: left;
+    left: 10px;
+}
+
+.bubble-him:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #eee;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #eee;
+    border-bottom: 10px solid transparent;
+    left: 19px;
+    bottom: -10px;
+}
+
+.bubble-me {
+    background: #4988EA;
+    color: #fff;
+    text-align: right;
+    left: 45px;
+}
+
+.bubble-me-first {
+    background: #4988EA;
+    color: #fff;
+    text-align: right;
+    left: 45px;
+}
+
+.bubble-me:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #4988EA;
+    border-top: 10px solid #4988EA;
+    border-bottom: 10px solid transparent;
+    right: 19px;
+    bottom: -10px;
+}
+
+.system-chat {
+    text-align: center;
+    padding: 5px;
+    margin: 10px auto;
+    width: 250px;
+}
+
+.chat-box {
+    margin: 10px;
+    padding: 5px 0;
+    width: 90%;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+.chat-name {
+    position: absolute;
+    top: 7px;
+    left: 45px;
+}
+
+.last-message {
+    position: absolute;
+    bottom: 5px;
+    left: 45px;
+    white-space: nowrap;
+    font-size: 13px;
+    color: #999;
+}
+
+/* EARN */
+
+.location {
+    width: 100%;
+    height: 100%;
+    background: url(/assets/img/map.png) no-repeat center;
+    background-size: cover;
+}
+
+.earn-item {
+    width: 90%;
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 800;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.earn-long {
+    position: absolute;
+    bottom: 15px;
+    left: 52px;
+    line-height: 16px;
+}
+
+.form {
+    width: 90% !important;
+    padding: 0 10px;
+}
+
+.form input {
+    margin-top: 18px;
+}
+
+.shop-item {
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(68,37,165,.1);
+    margin-bottom: 20px;
+    padding: 30px 10px;
+}
+
 /* OPEN QR */
 
 .open-qr {
@@ -386,7 +553,7 @@ h1 {
 
 .send-form {
     width: 80%;
-    margin: 30px auto 40px;
+    margin: 50px auto 40px;
     display: flex;
     flex-flow: column;
     text-align: center;
