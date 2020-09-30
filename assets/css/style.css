@@ -20,6 +20,13 @@ body {
     justify-content: center;
 }
 
+h1 {
+    font-size: 2.1em;
+    line-height: 1em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
 .main-sign-block {
     background: #fff;
     width: 350px;
@@ -205,6 +212,46 @@ body {
     top: -13px
 }
 
+.nickname {
+    margin: 0;
+}
+
+.account-name {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.action-buttons {
+    text-align: center;
+}
+
+.action-buttons a {
+    text-decoration: none;
+}
+
+.action-button {
+    background: #7833FF;
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    border-radius: 50px;
+    margin: 6px;
+    padding: 17px 7px 0;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(68,37,165,.1);
+    transition: .3s;
+}
+
+.account-status {
+    padding-top: 10px;
+}
+
 /* HISTORY */
 
 .history-title {
@@ -257,6 +304,46 @@ body {
     color: green;
 }
 
+/* CONTACTS */
+
+.contacts {
+    width: 100%;
+    margin: 40px 0 80px;
+}
+
+.contacts-title {
+    text-align: center;
+}
+
+.contacts-item {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contacts-name {
+    margin: 10px;
+    padding: 5px 0;
+    width: 90%;
+    border-bottom: 1px solid #ccc;
+}
+
+.contacts-name a {
+    color: #000;
+    text-decoration: none;
+}
+
+.add-contact {
+    margin: 10px;
+    padding: 5px 0;
+    width: 90%;
+}
+
+.add-contact a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+}
+
 /* OPEN QR */
 
 .open-qr {
@@ -300,11 +387,6 @@ body {
 }
 
 /* SEND */
-
-h1 {
-    font-size: 2.1em;
-    font-weight: 400;
-}
 
 .send-form {
     width: 80%;
