@@ -52,7 +52,7 @@ body {
 }
 
 .page {
-    margin: 60px 0;
+    margin: 70px 0 60px;
     width: 100%;
 }
 
@@ -70,6 +70,11 @@ h1 {
 
 .page-title {
     text-align: center;
+}
+
+.content-left {
+    padding: 0 20px;
+    text-align: left;
 }
 
 .logo {
@@ -232,7 +237,8 @@ h1 {
 
 .social-text {
     position: relative;
-    top: -13px
+    top: -12px;
+    left: 4px;
 }
 
 .nickname {
@@ -324,16 +330,26 @@ h1 {
     margin: 40px 0 80px;
 }
 
-.contacts-item {
+.list-item {
     font-size: 18px;
     margin: 10px 0;
 }
 
-.contacts-name {
+.list-name {
     margin: 10px;
     padding: 5px 0;
     width: 90%;
+}
+
+.border-bottom {
     border-bottom: 1px solid #ccc;
+}
+
+.category {
+    margin: 10px;
+    padding: 5px 0;
+    width: 90%;
+    font-weight: 800;
 }
 
 .add-contact {
@@ -473,6 +489,18 @@ h1 {
     height: 100%;
     background: url(/assets/img/map.png) no-repeat center;
     background-size: cover;
+    position: relative;
+}
+
+.location-categories {
+    position: absolute;
+    bottom: 60px;
+    left: 70px;
+    background: #fff;
+    border-radius: 20px;
+    border: 2px solid #000;
+    padding: 5px 10px;
+    font-size: 18px;
 }
 
 .earn-item {
@@ -487,7 +515,7 @@ h1 {
 .earn-long {
     position: absolute;
     bottom: 15px;
-    left: 52px;
+    left: 58px;
     line-height: 16px;
 }
 
@@ -506,6 +534,32 @@ h1 {
     box-shadow: 0 6px 8px rgba(68,37,165,.1);
     margin-bottom: 20px;
     padding: 30px 10px;
+}
+
+.done {
+    opacity: 0.5;
+    background: url(/assets/img/icons/done.svg) no-repeat right center;
+}
+
+/* SETTINGS */
+
+.antispam-item {
+    width: 90%;
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 800;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.antispam-name {
+    width: 65%;
+}
+
+.right-mode {
+    position: absolute;
+    right: 0;
+    top: 7px;
 }
 
 /* OPEN QR */
@@ -618,7 +672,7 @@ input[type=text]:focus {
     box-shadow: 0 3px 3px rgba(0, 0, 0,.5);
 }
 
-.available {
+.note {
     color: #666;
     font-size: 14px;
 }
