@@ -702,7 +702,7 @@ input[type=text]:focus {
 }
 
 .green {
-    background: #20F400 !important;
+    background: #3fe925 !important;
 }
 
 .business-id {
@@ -714,6 +714,33 @@ input[type=text]:focus {
 .business-id-name {
     position: relative;
     top: -8px;
+}
+
+.one-stroke-bordered-input {
+    font-size: 20px;
+}
+
+.send-button-white {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 130px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 15px;
+    margin: 6px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(68,37,165,.1);
+    transition: .3s;
+}
+
+.send-button-white:hover {
+    background: rgb(240, 240, 240);
+    box-shadow: 0 15px 20px rgb(255, 255, 255, 0.2);
 }
 
 /* FOOTER */
