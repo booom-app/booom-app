@@ -544,6 +544,18 @@ h1 {
 .done {
     opacity: 0.5;
     background: url(/assets/img/icons/done.svg) no-repeat right center;
+    background-size: 30px;
+}
+
+.undone {
+    opacity: 0.9;
+    background: url(/assets/img/icons/undone.svg) no-repeat right center;
+    background-size: 30px;
+}
+
+.text-alert {
+    background: rose;
+    color: red;
 }
 
 /* SETTINGS */
